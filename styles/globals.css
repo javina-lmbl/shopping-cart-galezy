@@ -2,6 +2,60 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  *:disabled {
+    @apply opacity-60;
+  }
+  body {
+    @apply bg-neutral-200 dark:bg-neutral-900;
+    @apply text-black dark:text-white;
+  }
+  h1 {
+    @apply text-6xl;
+  }
+  h2 {
+    @apply text-5xl;
+  }
+  h3 {
+    @apply text-4xl;
+  }
+  h4 {
+    @apply text-3xl;
+  }
+  h5 {
+    @apply text-2xl;
+  }
+  button {
+    @apply p-2 border-0;
+  }
+  input {
+    @apply p-2 border-0 rounded-md;
+    @apply bg-neutral-300 dark:bg-neutral-700;
+    @apply text-black dark:text-white;
+  }
+}
+
+@layer components {
+  .content-theme {
+    @apply bg-white dark:bg-neutral-800;
+  }
+
+  .border-theme {
+    @apply border-neutral-300 dark:border-neutral-700;
+  }
+
+  .btn-theme {
+    @apply bg-neutral-300 dark:bg-neutral-700;
+    @apply hover:bg-neutral-400 dark:hover:bg-neutral-600;
+    @apply text-black dark:text-white;
+  }
+
+  .btn-main {
+    @apply bg-blue-700 hover:bg-blue-800;
+    @apply text-white;
+  }
+}
+
 html,
 body {
   padding: 0;
