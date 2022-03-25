@@ -5,7 +5,7 @@ export interface ActionSetProducts extends Action<'products/set'> {
     list: Product[];
 }
 
-export interface ActionPlusCart extends Action<'cart/plus'> {
+export interface ActionAddCart extends Action<'cart/add'> {
     product: Product,
     amount: number
 }
