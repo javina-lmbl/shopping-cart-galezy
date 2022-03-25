@@ -23,7 +23,7 @@ function Cart() {
       ))}
       <div className="p-4">
         <p>
-          <b>Total: </b> $ {total}
+          <b>Total: </b> $ {Math.trunc(total * 100) / 100}
         </p>
         <Link href={'/cart'}>
           <button className="btn-main w-full">Go to Pay</button>
