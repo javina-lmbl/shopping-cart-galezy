@@ -25,10 +25,8 @@ function Cart() {
         <p>
           <b>Total: </b> $ {total}
         </p>
-      </div>
-      <div className="p-4">
         <Link href={'/cart'}>
-          <button className="">Go to Pay</button>
+          <button className="btn-main w-full">Go to Pay</button>
         </Link>
       </div>
     </div>
