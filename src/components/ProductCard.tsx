@@ -12,7 +12,7 @@ function ProductCard({ product }: ProductCardProps) {
   const { image, title, price } = product;
   return (
     <div className="border border-theme content-theme p-3">
-      <img className="w-full" src={image} />
+      <img className="w-auto max-h-44 mx-auto" src={image} />
       <div>
         <p>{title}</p>
       </div>
@@ -30,11 +30,7 @@ function ProductCard({ product }: ProductCardProps) {
           Add to Cart
         </button>
         <Link href={`/${product.id}`}>
-          <button
-            className="btn-theme m-1"
-          >
-            Details
-          </button>
+          <button className="btn-theme m-1">Details</button>
         </Link>
       </div>
     </div>
