@@ -18,8 +18,8 @@ function Cart() {
   }, [cart]);
   return (
     <div className="grid grid-cols-1 gap-2 ">
-      {cart.map((item, index) => (
-        <ItemCart key={`item_${index}`} {...item} />
+      {cart.map((item) => (
+        <ItemCart key={`item_${item.product.id}`} {...item} />
       ))}
       <div className="p-4">
         <p>

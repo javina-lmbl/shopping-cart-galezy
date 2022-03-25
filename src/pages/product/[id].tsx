@@ -5,7 +5,7 @@ import ProductDetails from '../../components/ProductDetails';
 const Details: NextPage = () => (
   <>
     <Head>
-      <title>Details</title>
+      <title>Product details</title>
     </Head>
     <ProductDetails />
   </>

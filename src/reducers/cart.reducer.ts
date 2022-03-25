@@ -19,11 +19,11 @@ export const cartReducer: Reducer<CartState, ActionAddCart> = (
     const { product, amount } = action;
     if (amount > 0 && !state.find((item) => item.product.id === product.id)) {
       state = [
-        ...state,
         {
           amount,
           product,
         },
+        ...state,
       ];
     } else {
       state = state
