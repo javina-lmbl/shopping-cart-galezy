@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getProducts } from '../actions/product.actions';
 import { productsState } from '../reducers/products.reducer';
 import { RootState } from '../reducers/root.reducer';
+import FilterProductsForm from './FilterProductsForm';
 import ProductCard from './ProductCard';
 
 function ProductList() {
@@ -27,9 +28,10 @@ function ProductList() {
             flag = product.category === category;
           }
           if (_search) {
+            const searchUpper = _search.toString().toUpperCase();
             flag =
-              product.title.includes(_search.toString()) ||
-              product.description.includes(_search.toString());
+              product.title.toUpperCase().includes(searchUpper) ||
+              product.description.toUpperCase().includes(searchUpper);
           }
           return flag;
         })
@@ -49,7 +51,7 @@ function ProductList() {
   return (
     <div className="max-w-2xl w-full mx-auto">
       <div className="my-2 p-4 border border-theme content-theme ">
-        {/* TODO: Filter */}
+        <FilterProductsForm />
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
         {productsToDisplay.map((product) => (

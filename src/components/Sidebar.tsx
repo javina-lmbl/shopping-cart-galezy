@@ -9,7 +9,7 @@ function Sidebar({ show, right, children }: SidebarProps) {
   return (
     <aside
       className={[
-        'content-theme border border-theme h-full min-w-[250px] max-w-[250px]',
+        'content-theme border border-theme h-full min-w-[250px] max-w-[250px] overflow-y-auto',
         'duration-100 transition-all',
         show
           ? 'relative translate-x-0'

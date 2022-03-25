@@ -28,7 +28,8 @@
   button {
     @apply p-2 border-0;
   }
-  input {
+  input,
+  select {
     @apply p-2 border-0 rounded-md;
     @apply bg-neutral-300 dark:bg-neutral-700;
     @apply text-black dark:text-white;
