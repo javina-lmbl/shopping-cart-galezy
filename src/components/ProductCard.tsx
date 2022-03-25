@@ -29,7 +29,7 @@ function ProductCard({ product }: ProductCardProps) {
         >
           Add to Cart
         </button>
-        <Link href={`/${product.id}`}>
+        <Link href={`/product/${product.id}`}>
           <button className="btn-theme m-1">Details</button>
         </Link>
       </div>

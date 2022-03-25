@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import ProductDetails from '../components/ProductDetails';
+import ProductDetails from '../../components/ProductDetails';
 
 const Details: NextPage = () => (
   <>
